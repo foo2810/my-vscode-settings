@@ -87,6 +87,17 @@
     },
     
 
+
+    // Toggle Comment
+    // Now, Ctrl+/ does not toggle comments (maybe bug). As its workaround, register
+    // another keybindins.
+    {
+        "key": "ctrl+;",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+
    
     // Misc
     {
