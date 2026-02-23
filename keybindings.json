@@ -1,0 +1,101 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Suggestion trigger setting.
+    // Configure to trigger text suggestion by Ctrl+n and
+    // to step to next/prev entry by Ctrl+n/Ctrl+p (like vim).
+    // Also, configure neovim.ctrlKeysForInsertMode in settings.json.
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.triggerSuggest",
+        "when": "inputFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    
+
+
+    // Focus settings (vim-like)
+    {
+        // Move to panel (terminal) from editor
+        "key": "ctrl+w p",
+        "command": "workbench.action.focusPanel",
+        "when": "editorFocus"
+    },
+    {
+        // Move to editor from panel (terminal)
+        "key": "ctrl+w p",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "panelFocus"
+    },
+
+    {
+        // Move to above editor group (sub window in vim)
+        "key": "ctrl+w k",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "editorFocus"
+    },
+    {
+        // Move to below editor group (sub window in vim)
+        "key": "ctrl+w j",
+        "command": "workbench.action.focusBelowGroup",
+        "when": "editorFocus"
+    },
+    {
+        // Move to left editor group (sub window in vim)
+        "key": "ctrl+w h",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "editorFocus"
+    },
+    {
+        // Move to right editor group (sub window in vim)
+        "key": "ctrl+w l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "editorFocus"
+    },
+
+    {
+        // Move to next tab in editor
+        "key": "ctrl+l",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "!panelFocus  && !sideBarFocus && !statusBarFocused && !activeEditorGroupEmpty"
+    },
+    {
+        // Move to previous tab in editor
+        "key": "ctrl+h",
+        "command": "workbench.action.previousEditorInGroup", "when": "!panelFocus  && !sideBarFocus && !statusBarFocused && !activeEditorGroupEmpty"
+    },
+
+    {
+        // Move to next view in panel, where terminal locates
+        "key": "ctrl+l",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+    {
+        // Move to previous view in panel, where terminal locates
+        "key": "ctrl+h",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+    },
+    
+
+   
+    // Misc
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.quickOpen",
+        "when": "!terminalFocusInAny"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    }
+]

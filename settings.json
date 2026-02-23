@@ -1,0 +1,135 @@
+{
+    /***** Editor default settings *****/
+
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.minimap.enabled": false,
+    "editor.tabCompletion": "off",
+    "editor.fontFamily": "Hack Nerd Font Mono",
+ 
+    // "inlineSuggest" is a feature from Github Copilot.
+    // Because user accepts a suggestion by triggering TAB key,
+    // sometimes user cannot type TAB purely. So disable it.
+    // (2025/12/03)
+    "editor.inlineSuggest.enabled": false,
+ 
+ 
+
+    /***** Explorer settings *****/
+
+    "explorer.autoReveal": false,
+    "terminal.integrated.inheritEnv": false,
+    
+
+
+    /***** Terminal settings *****/
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+
+ 
+
+    /***** Per-language settings *****/
+
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.insertSpaces": true
+    },
+    
+    "[json]": {
+        "editor.insertSpaces": true,
+    },
+    "[jsonc]": {
+        "editor.insertSpaces": true,
+    },
+    "[jsonl]": {
+        "editor.insertSpaces": true,
+    },
+    
+
+
+    /***** Remote SSH *****/
+    "remote.SSH.configFile": "~/.ssh/config-vscode",
+
+
+
+    /***** vscode-neovim settings *****/
+
+    // Suggestion trigger setting.
+    // Configure to trigger text suggestion by Ctrl+n and
+    // to step to next/prev entry by Ctrl+n/Ctrl+p (like vim).
+    // In settings.json, add "n" key into neovim.ctrlKeysForInsertMode.
+    // Also, configure Ctrl+n/Ctrl+p bindings in keybindings.json.
+    "vscode-neovim.ctrlKeysForInsertMode": [
+        "a",
+        "c",
+        "d",
+        "h",
+        "j",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "w",
+        "n"     // is used by suggestion trigger
+    ],
+    // c.f. ctrlKeysForNormalMode enables Ctrl+<key> combinations for "insert" mode,
+    // which is controled by neovim.
+    // Caution: This settings overrides default.
+
+
+    // Remove "/" from default of "vscode-neovim.ctrlKeysForNormalMode".
+    // c.f. ctrlKeysForNormalMode enables Ctrl+<key> combinations for "normal" mode,
+    // which is controled by neovim.
+    // Caution: This settings overrides default.
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+
+
+
+    /***** Misc *****/
+
+    // Configure to execute vscode-neovim in a different thread. (2025/12/03)
+    // c.f. https://github.com/vscode-neovim/vscode-neovim/issues/1051
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+
+    // Disable terminal-integrated suggestions
+    "terminal.integrated.suggest.enabled": false,
+    
+    // Disable the notification for extension recommendations
+    "extensions.ignoreRecommendations": true,
+    
+    // Disable stickyScroll
+    "terminal.integrated.stickyScroll.enabled": false,
+    "editor.stickyScroll.enabled": false
+}
