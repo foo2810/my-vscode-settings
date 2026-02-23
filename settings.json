@@ -38,13 +38,13 @@
     },
     
     "[json]": {
-        "editor.insertSpaces": true,
+        "editor.insertSpaces": true
     },
     "[jsonc]": {
-        "editor.insertSpaces": true,
+        "editor.insertSpaces": true
     },
     "[jsonl]": {
-        "editor.insertSpaces": true,
+        "editor.insertSpaces": true
     },
     
 
