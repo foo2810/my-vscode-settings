@@ -9,34 +9,45 @@
     "editor.minimap.enabled": false,
     "editor.tabCompletion": "off",
     "editor.fontFamily": "Hack Nerd Font Mono",
- 
+
     // "inlineSuggest" is a feature from Github Copilot.
     // Because user accepts a suggestion by triggering TAB key,
     // sometimes user cannot type TAB purely. So disable it.
     // (2025/12/03)
     "editor.inlineSuggest.enabled": false,
- 
- 
+
+    // Enable word based suggestion (like vim's native completion)
+    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.suggest.showWords": true,
+    "editor.suggestSelection": "recentlyUsed",
+
+
 
     /***** Explorer settings *****/
 
     "explorer.autoReveal": false,
     "terminal.integrated.inheritEnv": false,
-    
+
 
 
     /***** Terminal settings *****/
     "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
 
- 
+
 
     /***** Per-language settings *****/
 
     "[python]": {
         "editor.formatOnType": true,
-        "editor.insertSpaces": true
+        "editor.insertSpaces": true,
+
+        // Enable word-based suggestion explicitly.
+        // By default, intellisense disable word-based suggestion.
+        "editor.wordBasedSuggestions": "matchingDocuments",
+        "editor.suggest.showWords": true,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
     },
-    
+
     "[json]": {
         "editor.insertSpaces": true
     },
@@ -46,7 +57,7 @@
     "[jsonl]": {
         "editor.insertSpaces": true
     },
-    
+
 
 
     /***** Remote SSH *****/
@@ -127,10 +138,10 @@
 
     // Disable terminal-integrated suggestions
     "terminal.integrated.suggest.enabled": false,
-    
+
     // Disable the notification for extension recommendations
     "extensions.ignoreRecommendations": true,
-    
+
     // Disable stickyScroll
     "terminal.integrated.stickyScroll.enabled": false,
     "editor.stickyScroll.enabled": false
