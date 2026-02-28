@@ -4,7 +4,7 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "editor.comments.insertSpace": true,
-    "editor.comments.ignoreEmptyLines": false,
+    "editor.comments.ignoreEmptyLines": true,
     "editor.detectIndentation": false,
     "editor.minimap.enabled": false,
     "editor.tabCompletion": "off",
