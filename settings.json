@@ -36,6 +36,59 @@
 
 
     /***** Per-language settings *****/
+    "[c]": {
+        "editor.formatOnType": true,
+
+        // Do not expand tab
+        "editor.insertSpaces": false,
+
+        // Enable word-based suggestion explicitly.
+        // By default, intellisense disable word-based suggestion
+        // with global settings overwritten.
+        "editor.wordBasedSuggestions": "matchingDocuments",
+        "editor.suggest.showWords": true,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
+
+    "[cpp]": {
+        "editor.formatOnType": true,
+
+        // Do not expand tab
+        "editor.insertSpaces": false,
+
+        // Enable word-based suggestion explicitly.
+        // By default, intellisense disable word-based suggestion
+        // with global settings overwritten.
+        "editor.wordBasedSuggestions": "matchingDocuments",
+        "editor.suggest.showWords": true,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
+
+    "[rust]": {
+        "editor.formatOnType": true,
+        "editor.insertSpaces": true,
+
+        // Enable word-based suggestion explicitly.
+        // By default, intellisense disable word-based suggestion
+        // with global settings overwritten.
+        "editor.wordBasedSuggestions": "matchingDocuments",
+        "editor.suggest.showWords": true,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
+
+    "[shellscript]": {
+        "editor.formatOnType": true,
+
+        // Do not expand tab
+        "editor.insertSpaces": false,
+
+        // Enable word-based suggestion explicitly.
+        // By default, intellisense disable word-based suggestion
+        // with global settings overwritten.
+        "editor.wordBasedSuggestions": "matchingDocuments",
+        "editor.suggest.showWords": true,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
 
     "[python]": {
         "editor.formatOnType": true,
